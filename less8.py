@@ -1,0 +1,12 @@
+f = open('less8.txt','r')
+s = str(f.read())
+s = s[::-1]
+n = open('newless8.txt','x')
+n.close()
+n = open('newless8.txt','w')
+n.write(s)
+n.close()
+f = open('less8.txt','r')
+print(f.read())
+n = open('newless8.txt','r')
+print(n.read())
